@@ -1,0 +1,34 @@
+<resources>
+    <string name="app_name">Trackify-car</string>
+    <string name="edit">edit</string>
+    <string name="add">add</string>
+    <string name="enter_your_private_code">Enter your private code</string>
+    <string name="save">save</string>
+    <string name="back">back</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="numero_de_telephone">Num de téléphone</string>
+    <string name="co_numero_de_tel">Confirmez le numéro de téléphone</string>
+    <string name="ajouter_une_voiture">Ajouter une voiture</string>
+    <string name="annuler">ANNULER</string>
+    <string name="suivant">SUIVANT</string>
+    <string name="code_secret">Code Secret</string>
+    <string name="confirmez_le_code_secret">Confirmez le code secret</string>
+    <string name="matricule">Matricule</string>
+    <string name="couleur">Couleur</string>
+    <string name="marque">Marque</string>
+    <string name="mod_le">Modèle</string>
+    <string name="confirmer">CONFIRMER</string>
+    <string name="hello_world">Hello Square World!</string>
+    <string name="map_infos_name">Car Name</string>
+    <string name="map_infos_phone">06 57 48 39 83</string>
+    <string name="map_infos_date">24. 04. 2021</string>
+    <string name="map_infos_hour">09</string>
+    <string name="map_infos_min">30</string>
+    <string name="pin_location_on_map_when_clicked">pin location on map when clicked</string>
+    <string name="back_to_homepage">back to homepage</string>
+    <string name="location_section">location section</string>
+    <string name="enter_mobile">Enter mobile number</string>
+    <string name="title_activity_maps">Map</string>
+    <string name="rand_text"><u>Générer aléatoirement</u></string>
+    <string name="configurer_votre_voiture">Configurer votre voiture</string>
+</resources>

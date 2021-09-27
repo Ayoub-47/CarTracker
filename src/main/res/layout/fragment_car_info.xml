@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:layout_gravity="center"
+    tools:context=".Fragments.CarInfoFragment"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_centerVertical="true"
+    >
+
+    <RelativeLayout
+        android:id="@+id/bloc1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toTopOf="@+id/buttons"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginHorizontal="40dp"
+        android:layout_marginTop="10dp"
+        app:layout_constraintTop_toBottomOf="@+id/relativeLayout"
+        >
+
+        <TextView
+            android:id="@+id/key_matricule"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:fontFamily="@font/montserrat_semibold"
+            android:text="matricule"
+            android:textSize="12sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/value_matricule"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/key_matricule"
+            android:layout_alignStart="@+id/value_num_tele"
+            android:fontFamily="@font/montserrat_medium"
+            android:text="00513 111 39"
+            android:textColor="@color/dark_grey"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/key_code_secret"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/key_matricule"
+            android:layout_marginTop="20dp"
+            android:fontFamily="@font/montserrat_semibold"
+            android:text="code secret"
+            android:textSize="12sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/value_code_secret"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/key_code_secret"
+            android:layout_alignStart="@+id/value_num_tele"
+            android:fontFamily="@font/montserrat_medium"
+            android:text="Hy_9T@Ou"
+            android:textColor="@color/dark_grey"
+            android:textSize="12sp" />
+        <TextView
+            android:id="@+id/key_num_tele"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/key_code_secret"
+            android:layout_marginTop="20dp"
+            android:fontFamily="@font/montserrat_semibold"
+            android:text="numéro de téléphone"
+            android:textSize="12sp"
+            android:textStyle="bold" />
+        <TextView
+            android:id="@+id/value_num_tele"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/key_num_tele"
+            android:fontFamily="@font/montserrat_medium"
+            android:text="056 83 23 17"
+            android:layout_marginLeft="20dp"
+            android:textColor="@color/dark_grey"
+            android:layout_toEndOf="@+id/key_num_tele"
+            android:textSize="12sp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toTopOf="@+id/bloc1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginBottom="30dp"
+        android:layout_marginTop="80dp"
+        >
+
+        <ImageView
+            android:id="@+id/car_illustration"
+            android:layout_width="129dp"
+            android:layout_height="98dp"
+            android:layout_centerHorizontal="true"
+            android:contentDescription="car illustration"
+            android:src="@drawable/car" />
+
+        <TextView
+            android:id="@+id/value_car_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/car_illustration"
+            android:fontFamily="@font/montserrat_bold"
+            android:text="Marque"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+    </RelativeLayout>
+    <RelativeLayout
+        android:id="@+id/buttons"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/bloc1"
+        >
+        <Button
+            android:id="@+id/show_qr_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="30dp"
+            android:backgroundTint="@color/violet"
+            android:drawableEnd="@drawable/ic_iconfinder_qr_code_7067496"
+            android:drawableTint="@color/white"
+            android:fontFamily="@font/montserrat_semibold"
+            android:text="Show QR"
+            android:textAllCaps="true"
+            android:textSize="10sp"
+            android:paddingHorizontal="30dp"
+            />
+
+        <Button
+            android:id="@+id/modifier_btn"
+            style="?attr/materialButtonOutlinedStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/show_qr_btn"
+            android:backgroundTint="@android:color/transparent"
+            android:fontFamily="@font/montserrat_semibold"
+            android:text="Modifier"
+            android:textAllCaps="true"
+            android:layout_centerHorizontal="true"
+            android:textColor="@color/violet"
+            android:textSize="10sp"
+            android:layout_marginTop="10dp"
+            app:cornerRadius="6dp"
+            app:strokeColor="@color/violet"
+            app:strokeWidth="1dp" />
+    </RelativeLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
